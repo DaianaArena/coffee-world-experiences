@@ -32,6 +32,10 @@
                 font-size: 70px;
             }
 
+            @media screen and (min-width: 1080px) {
+                font-size: 120px;
+            }
+
         }
         p{
             margin-left: 10%;
@@ -47,6 +51,15 @@
                 margin: 50px 10%;
                 font-size: 30px;
             }
+
+            @media screen and (min-width: 1080px) {
+                margin: 20px 10%;
+                font-size: 50px;
+            }
         }
+    }
+
+    @media screen and (min-width: 1080px) {
+        min-height: unset;
     }
 }
