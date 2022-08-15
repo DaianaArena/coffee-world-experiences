@@ -48,4 +48,9 @@
     @media screen and (min-width: 1080px) {
         min-height: unset;
     }
+
+    @media screen and (min-width: 1366px) {
+       min-width: unset;
+        width: 100%;
+    }
 }

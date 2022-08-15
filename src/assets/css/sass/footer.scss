@@ -35,4 +35,17 @@ footer {
             }
         }
     }
+
+    @media screen and (min-width: 1080px) {
+        font-size: 40px;
+        
+
+        div {
+            justify-content: center;
+            gap:50px;
+            a{
+                font-size: 50px;
+            }
+        }
+    }
 }

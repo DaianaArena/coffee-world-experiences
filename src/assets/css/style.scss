@@ -9,6 +9,7 @@ body, html {
 }
 
 
+
 body {
     @import 'sass/header';
     @import 'sass/main';
@@ -17,4 +18,11 @@ body {
     @import 'sass/travel';
     @import 'sass/go';
     @import 'sass/end';
+}
+
+#website{
+    max-width: 1366px;
+    margin: 0 auto;
+    overflow-x: hidden;
+    position: relative;
 }

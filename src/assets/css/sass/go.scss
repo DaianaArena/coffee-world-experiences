@@ -17,6 +17,16 @@
         @media screen and (min-width: 600px) {
             height: 200px;
         }
+
+        @media screen and (min-width: 1080px) {
+            height: 300px;
+        }
+
+        @media screen and (min-width: 1366px) {
+            height: 500px;
+            min-width: unset;
+            width: 100%;
+        }
     }
 
     &__info{
@@ -61,5 +71,9 @@
 
     @media screen and (min-width: 1080px) {
         min-height: unset;
+    }
+    @media screen and (min-width: 1366px) {
+        min-width: unset;
+        width: 100%;
     }
 }
