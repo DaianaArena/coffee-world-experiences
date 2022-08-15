@@ -1,0 +1,74 @@
+.hero {
+    position: relative;
+    &__videocontainer{
+        .hero__video{
+            display: block;
+            width: 100vw;
+
+            &--mb{
+                display: block;
+                margin: 0 auto;
+                width: 100%;
+            }
+            &--tb{
+                display: none;
+                margin: 0 auto;
+                width: 100%;
+            }
+            &--dt{
+                display: none;
+                margin: 0 auto;
+                width: 100%;
+            }
+
+            @media screen and (min-width: 500px) {
+                &--mb{
+                    display: none;
+                }
+                &--tb{
+                    display: block;
+                }
+            }
+
+            @media screen and (min-width: 992px) {
+                &--tb{
+                    display: none;
+                }
+                &--dt{
+                    display: block;
+                }
+            }
+        }
+    }
+
+    hgroup {
+        position: absolute;
+        top: 5%;
+        left: 0;
+        h1{
+            width: 80%;
+            padding-bottom: 10px;
+            padding-left: 10%;
+            border-bottom: 8px solid $dark;
+
+            font-weight: 700;
+            font-size: 40px;
+        }
+        h2 {
+            padding-left: 10%;
+            margin-top: 10px;
+
+            font-size: 18px;
+        }
+    }
+
+    &__gradient{
+        display: block;
+        background: linear-gradient(180deg, rgba(250,250,250,.85) 10%, rgba(250,250,250,0) 100%);
+        width: 100vw;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+}

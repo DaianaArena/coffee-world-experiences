@@ -1,0 +1,30 @@
+.about{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+    h2{
+        width: 80%;
+
+        font-weight: 700;
+        font-size: 70px;
+        padding-left: 10%;
+        margin-top: 10px;
+
+        &::before{
+            content: '.';
+        }
+    }
+    p{
+        margin-left: 10%;
+        margin-top: 30px;
+        padding-left: 20px;
+        padding-right: 30px;
+        border-left: 10px solid $dark;
+
+        font-size: 18px;
+        text-align: justify;
+    }
+
+}

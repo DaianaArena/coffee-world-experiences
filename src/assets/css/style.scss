@@ -1,0 +1,20 @@
+@charset "UTF-8";
+@import 'sass/variables';
+
+body, html {
+    @import 'sass/reset';
+    font-family: $ppal-font;
+    background-color: $clear;
+    color: $dark;
+}
+
+
+body {
+    @import 'sass/header';
+    @import 'sass/main';
+    @import 'sass/footer';
+    @import 'sass/about';
+    @import 'sass/travel';
+    @import 'sass/go';
+    @import 'sass/end';
+}
