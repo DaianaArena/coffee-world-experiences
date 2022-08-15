@@ -74,6 +74,10 @@
                 font-size: 30px;
             }
         }
+
+        @media screen and (min-width: 1080px) {
+            top: 5%;
+        }
     }
 
     &__gradient{

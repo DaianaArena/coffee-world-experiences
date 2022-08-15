@@ -44,7 +44,7 @@
     }
 
     &__cards{
-        div{
+        div.card{
             width: 300px;
             height: 300px;
             margin: 5px auto;
@@ -96,7 +96,7 @@
         }
 
         @media screen and (min-width: 768px) {
-            div{
+            div.card{
                 width: 200px;
                 height: 300px;
 
@@ -156,7 +156,7 @@
 
         @media screen and (min-width: 1080px) {
             margin: 20px auto;
-            div{
+            div.card{
                 width: 300px;
                 height: 400px;
 
