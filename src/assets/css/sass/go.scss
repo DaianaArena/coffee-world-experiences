@@ -1,6 +1,6 @@
 .go{
-    width: 100vw;
-    height: 100vh;
+    min-width: 100vw;
+    min-height: 100vh;
     &__imagecontainer{
         display: block;
         width: 100vw;
@@ -13,6 +13,10 @@
             object-fit: cover;
             object-position: 50% 50%;
         }
+
+        @media screen and (min-width: 600px) {
+            height: 200px;
+        }
     }
 
     &__info{
@@ -24,6 +28,10 @@
             font-weight: 700;
             font-size: 40px;
 
+            @media screen and (min-width: 768px) {
+                font-size: 70px;
+            }
+
         }
         p{
             margin-left: 10%;
@@ -34,6 +42,11 @@
     
             font-size: 18px;
             text-align: justify;
+
+            @media screen and (min-width: 768px) {
+                margin: 50px 10%;
+                font-size: 30px;
+            }
         }
     }
 }

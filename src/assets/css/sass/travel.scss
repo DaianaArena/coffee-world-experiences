@@ -14,6 +14,10 @@
         &::before{
             content: '.';
         }
+
+        @media screen and (min-width: 768px) {
+            font-size: 100px;
+        }
     }
 
     p{
@@ -21,6 +25,11 @@
         margin-left: 10%;
 
         font-size: 18px;
+
+        @media screen and (min-width: 768px) {
+            margin: 50px 10%;
+            font-size: 30px;
+        }
     }
 
     &__cards{
@@ -74,5 +83,60 @@
                
             }
         }
+
+        @media screen and (min-width: 768px) {
+            div{
+                width: 200px;
+                height: 300px;
+
+            }
+
+            width: 80%;
+            margin: 0 auto;
+
+            display: grid; 
+            grid-auto-rows: 1fr; 
+            grid-template-columns: 1fr 1fr 1fr; 
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr; 
+            gap: 10px 10px; 
+            grid-template-areas: 
+                "left-top center right-top"
+                "left-top center right-top"
+                "left-top center right-top"
+                "left-top center right-bottom"
+                "left-bottom center right-bottom"
+                "left-bottom center right-bottom"
+                "left-bottom center right-bottom"; 
+
+            .center {
+            justify-self: center; 
+            align-self: center; 
+            grid-area: center; 
+            }
+            .left-top {
+            justify-self: end; 
+            align-self: end; 
+            grid-area: left-top; 
+            }
+            .left-bottom {
+            justify-self: end; 
+            align-self: start; 
+            grid-area: left-bottom; 
+            }
+            .right-top {
+            justify-self: start; 
+            align-self: end; 
+            grid-area: right-top; 
+            }
+            .right-bottom {
+            justify-self: start; 
+            align-self: start; 
+            grid-area: right-bottom; 
+            }
+        }
+    }
+
+    @media screen and (min-width: 768px) {
+        padding: 50px 0;
     }
 }

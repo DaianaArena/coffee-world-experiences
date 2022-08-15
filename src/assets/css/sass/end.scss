@@ -1,6 +1,7 @@
 .end{
     min-width: 100vw;
     min-height: 100vh;
+    padding: 50px 0;
     img{
         width: 100vw;
             filter: grayscale(1);
@@ -16,12 +17,22 @@
             content: '.';
         }
 
+        @media screen and (min-width: 768px) {
+            font-size: 100px;
+        }
+
     }
     p{
         margin-left: 10%;
         margin-top: 30px;
         padding-right: 30px;
 
+
         font-size: 18px;
+
+        @media screen and (min-width: 768px) {
+            margin: 50px 10%;
+            font-size: 30px;
+        }
     }
 }
